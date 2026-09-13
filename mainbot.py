@@ -6,8 +6,8 @@ from bot_database import *
 import random as rm
 import os
 
-session = AiohttpSession(proxy="your_proxy")
-bot = Bot(token="your_token", session=session)
+session = AiohttpSession(proxy="")
+bot = Bot(token="", session=session)
 dp = Dispatcher()
 
 start_quiz = False
