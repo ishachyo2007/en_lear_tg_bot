@@ -65,15 +65,3 @@ def upgrade_level(us_id, word, count):
     data[word]["level"] += count
     with open(f"{str(us_id)}.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-"""data = {
-    "word": "cat",
-    "translate": "кот",
-    "level": 1
-}
-
-with open("ishachyo.json", "w", encoding="utf-8") as f:
-    f.write(json.dumps(data, ensure_ascii=False, indent=4))
-
-with open("ishachyo.json", "r", encoding="utf-8") as f:
-    da = json.load(f)
-    print(data)"""
